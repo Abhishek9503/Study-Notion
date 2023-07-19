@@ -16,7 +16,7 @@ dotenv.config();
 const PORT=process.env.PORT || 4000;
 
 
-//database
+//database  
 
 database.connect();
 
@@ -27,7 +27,10 @@ app.use(cookieParser());
 app.use(
     cors()
 
-
+    // cors({
+    //     origin:"http://localhost:3000",
+    //     credentials:true,
+    // })
 )
 
 
